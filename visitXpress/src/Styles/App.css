@@ -1,0 +1,155 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #eef1f6;
+  overflow: hidden;
+}
+
+/* LAYOUT */
+.app-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #111827; /* dark slate */
+  color: #d1d5db;
+  width: 250px;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+  overflow: hidden;
+  border-right: 1px solid #1f2937;
+}
+
+.sidebar.closed {
+  width: 80px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 20px 30px 20px;
+}
+
+/* SIDEBAR LINKS */
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar ul li:hover {
+  background: #1f2937;
+  border-left: 3px solid #3b82f6;
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  margin-right: 16px;
+  min-width: 24px;
+}
+
+.sidebar.closed .sidebar-text {
+  display: none;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 15px;
+}
+
+/* MAIN CONTENT AREA */
+.main {
+  flex: 1;
+  background: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* TOPBAR */
+.topbar {
+  background: #ffffff;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.topbar h3 {
+  font-size: 20px;
+  color: #111827;
+  font-weight: 600;
+}
+
+/* PAGE CONTENT */
+.content {
+  padding: 30px;
+  overflow-y: auto;
+  flex: 1;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+p {
+  color: #6b7280;
+  font-size: 16px;
+}
+
+/* Toggle button container */
+.toggle-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+}
+
+/* Icon styling */
+.toggle-btn {
+  font-size: 22px;
+  cursor: pointer;
+  color: #e5e7eb;
+  transition: transform 0.2s ease;
+}
+
+/* Rotate icon slightly when closed */
+.sidebar.closed .toggle-btn {
+  transform: rotate(180deg);
+}
+
+/* Adjust sidebar layout */
+.sidebar.open .toggle-container {
+  justify-content: flex-end;
+}
+
+.sidebar.closed .toggle-container {
+  justify-content: center;
+}
+
+/* Make sidebar text fade when closing */
+.sidebar.closed .sidebar-text {
+  opacity: 0;
+  width: 0;
+}
