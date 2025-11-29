@@ -1,0 +1,63 @@
+## Build Folders
+bin/
+obj/
+out/
+
+## VS / Rider / VS Code
+.vs/
+.idea/
+.vscode/
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Logs
+*.log
+
+## NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+## Generated files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.dbmdl
+*.bak
+*.mdf
+*.ldf
+
+## Publish output
+publish/
+AppPackages/
+BundleArtifacts/
+
+## ASP.NET Specific
+Generated_Code/
+Properties/launchSettings.json
+
+## EF Core
+Migrations/*Designer.cs
+Migrations/*Snapshot.cs
+
+## OS-specific junk
+Thumbs.db
+desktop.ini
+.DS_Store
+
+## Secrets
+appsettings.Development.json
+appsettings.Local.json
+*.secret.json
+secrets.json
+
+## Test results
+TestResult*
+*.coverage
+*.coveragexml
