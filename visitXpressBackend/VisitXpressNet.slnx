@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="VisitXpress.Api/VisitXpress.Api.csproj" />
+  <Project Path="VisitXpress.Common/VisitXpress.Common.csproj" />
+  <Project Path="VisitXpress.Repositories/VisitXpress.Repositories.csproj" />
+  <Project Path="VisitXpress.Services/VisitXpress.Services.csproj" />
+</Solution>
